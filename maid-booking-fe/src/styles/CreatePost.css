@@ -1,0 +1,102 @@
+/* General form styling */
+.post {
+    background-color: #fff; /* Màu nền cho form */
+    border: 1px solid #ddd; /* Đường viền */
+    border-radius: 8px; /* Bo góc */
+    padding: 30px; /* Tăng khoảng cách bên trong */
+    margin: 30px auto; /* Canh giữa theo chiều ngang */
+    max-width: 900px; /* Chiều rộng tối đa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Hiệu ứng đổ bóng */
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333; /* Màu chữ */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    display: flex; /* Dùng flexbox để căn chỉnh */
+    flex-direction: column; /* Sắp xếp theo cột */
+    width: 100%; /* Đảm bảo các form group chiếm đủ chiều ngang */
+}
+
+/* Input, select, and textarea styling */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%; /* Tất cả các input/select có chiều rộng giống nhau */
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng container */
+    font-size: 16px;
+    color: #555;
+    box-sizing: border-box; /* Bao gồm cả padding và border */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Đổi màu viền khi focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng sáng khi focus */
+}
+
+/* Error message styling */
+.error {
+    color: #ff4d4d; /* Màu đỏ nổi bật */
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #0056b3; /* Đổi màu khi hover */
+}
+
+.submit-post {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-post:hover {
+    background-color: #218838; /* Đổi màu khi hover */
+}
+
+/* Button container styling */
+.box-avatar {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 15px; /* Khoảng cách giữa các nút */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .post {
+        padding: 20px; /* Giảm padding trên thiết bị nhỏ */
+    }
+
+    .form-group {
+        flex-direction: column; /* Sắp xếp dọc trên thiết bị nhỏ */
+    }
+
+    .btn {
+        width: 100%; /* Đặt nút rộng 100% trên thiết bị nhỏ */
+    }
+}
